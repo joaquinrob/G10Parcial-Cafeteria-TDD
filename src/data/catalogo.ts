@@ -3,6 +3,7 @@ import { Expreso } from '../models/Expreso';
 import { Filtrado } from '../models/Filtrado';
 import { Pasteleria } from '../models/Pasteleria';
 import { Tamano, Variedad } from '../models/tipos';
+import { PRECIO_MUFFIN, PRECIO_TORTA } from '../config/precios';
 
 const TAMANOS: Tamano[] = ['Pocillo', 'Mediano', 'Taza grande'];
 const VARIEDADES: Variedad[] = ['Brasil', 'Colombia', 'Etiopia'];
@@ -21,7 +22,8 @@ export function crearCatalogo(): Producto[] {
       productos.push(new Filtrado(id++, tamano, variedad));
     }
   }
-  productos.push(new Pasteleria(id++, 'Muffin de chocolate', 2500));
-  productos.push(new Pasteleria(id++, 'Torta selva negra', 4200));
+  productos.push(new Pasteleria(id++, 'Muffin de chocolate', PRECIO_MUFFIN));
+  productos.push(new Pasteleria(id++, 'Torta selva negra', PRECIO_TORTA));
   return productos;
 }
+
