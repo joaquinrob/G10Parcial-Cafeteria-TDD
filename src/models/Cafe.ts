@@ -1,12 +1,6 @@
 import { Producto } from './Producto';
 import { Tamano, Variedad } from './tipos';
-
-/** Precio por gramo de cafe segun la variedad ($). */
-export const PRECIO_POR_GRAMO: Record<Variedad, number> = {
-  Brasil: 140,
-  Colombia: 180,
-  Etiopia: 240,
-};
+import { PRECIO_POR_GRAMO } from '../config/precios';
 
 export abstract class Cafe extends Producto {
   constructor(

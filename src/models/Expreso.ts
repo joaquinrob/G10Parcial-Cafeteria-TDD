@@ -1,12 +1,9 @@
 import { Cafe } from './Cafe';
 import { Tamano, Variedad } from './tipos';
-
-const GRAMOS: Record<Tamano, number> = { Pocillo: 18, Mediano: 27, 'Taza grande': 36 };
+import { GRAMOS_EXPRESO, PRECIO_BASE_EXPRESO } from '../config/precios';
 
 export class Expreso extends Cafe {
-  static readonly PRECIO_BASE = 2500;
-
   constructor(id: number, tamano: Tamano, variedad: Variedad) {
-    super(id, `Expreso ${tamano} ${variedad}`, Expreso.PRECIO_BASE, tamano, variedad, GRAMOS[tamano]);
+    super(id, `Expreso ${tamano} ${variedad}`, PRECIO_BASE_EXPRESO, tamano, variedad, GRAMOS_EXPRESO[tamano]);
   }
 }
