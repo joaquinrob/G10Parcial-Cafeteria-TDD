@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { ProductoRepository } from '../src/repositories/ProductoRepository';
-import { PedidoRepository } from '../src/repositories/PedidoRepository';
-import { PedidoService } from '../src/services/PedidoService';
-import { NoEncontradoError, ValidacionError } from '../src/services/errors';
+import { ProductoRepository } from '../../src/repositories/ProductoRepository';
+import { PedidoRepository } from '../../src/repositories/PedidoRepository';
+import { PedidoService } from '../../src/services/PedidoService';
+import { NoEncontradoError, ValidacionError } from '../../src/services/errors';
 
 // ids: 1 = Expreso Pocillo Brasil ($5020), 4 = Expreso Mediano Brasil ($6280),
 // 19 = Muffin ($2500), 20 = Torta ($4200)
