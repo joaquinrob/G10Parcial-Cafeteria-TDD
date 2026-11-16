@@ -1,9 +1,9 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { ProductoRepository } from '../src/repositories/ProductoRepository';
-import { PedidoRepository } from '../src/repositories/PedidoRepository';
-import { PedidoService } from '../src/services/PedidoService';
-import { ReporteService } from '../src/services/ReporteService';
-import { NoEncontradoError } from '../src/services/errors';
+import { ProductoRepository } from '../../src/repositories/ProductoRepository';
+import { PedidoRepository } from '../../src/repositories/PedidoRepository';
+import { PedidoService } from '../../src/services/PedidoService';
+import { ReporteService } from '../../src/services/ReporteService';
+import { NoEncontradoError } from '../../src/services/errors';
 
 describe('ReporteService', () => {
   let pedidos: PedidoService;

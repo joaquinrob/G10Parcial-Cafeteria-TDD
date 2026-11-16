@@ -1,6 +1,6 @@
-export type EstadoPedido = 'pendiente' | 'en preparación' | 'entregado'; 
+export type EstadoPedido = 'pendiente' | 'en preparacion' | 'entregado'; 
 
-export const ESTADOS_VALIDOS: EstadoPedido[] = ['pendiente', 'en preparación', 'entregado']; 
+export const ESTADOS_VALIDOS: EstadoPedido[] = ['pendiente', 'en preparacion', 'entregado']; 
 
 export interface ItemPedido {
   productoId: number;
